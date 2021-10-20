@@ -1,16 +1,39 @@
-# This is a sample Python script.
+# functions
+error = "Question failed, please restart"
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+# main program
+print("welcome to the challenger")
 
+show_instructions = input("have you played this quiz before").lower().strip()
+if show_instructions == "no" or show_instructions == "n":
+        print("this quiz is here to test your knowledge")
+        print("*** tips ***")
+        print("tip #1 *= multiplication")
+        print("tip #2 /= division")
+        print("tip #3 -= subtraction")
+        print("tip #4 += addition")
+        print("thanks for testing your knowledge on our quiz")
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+print("Question 1")
+answer = int(input("8 * 2 * 3="))
+if answer == 48:
+    print("Correct proceed to the next question")
+else:
+    print(error)
 
+print("Question 2")
+answer = int(input("69 * 364="))
+if answer == 23296:
+    print("Correct proceed to the next question")
+else:
+    print(error)
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+print("question 3")
+answer = int(input("445 * 156="))
+if answer == 69420:
+    print("correct proceed to the next question")
+else:
+    print(error)
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+print("question 4")
+answer = int(input("2(1 + 2)"))
